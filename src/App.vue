@@ -4,7 +4,7 @@
       <Navigation />
     </div>
 
-    <div class="w-full h-screen overflow-y-scroll">
+    <div class="w-full h-screen">
       <Editor />
       <Tiptap />
     </div>

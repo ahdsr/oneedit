@@ -9,7 +9,7 @@
     <div class="w-full h-screen" v-on:click="clickEdit">
       <Editor />
       <!-- <Slider v-model="value" /> -->
-      <Tiptap class="mt-6" />
+      <tiptap class="mt-6" />
       <PreviewPub v-if="previewShowing" />
     </div>
 

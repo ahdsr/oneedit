@@ -148,8 +148,11 @@
       :editor="editor"
     />
 
-    <div class="text-xs text-yellow-400">
-      <a href="{{ photoCredit }}">{{ photoCredit }}</a>
+    <div class="flex justify-center m-2 text-xs text-yellow-400">
+      <a v-bind:href="photoURL">
+        Photo by
+        {{ photoCredit }}
+      </a>
     </div>
   </div>
 </template>
@@ -166,7 +169,8 @@ export default {
   data() {
     return {
       editor: null,
-      photoCredit: "https://unsplash.com/@mailchimp/likes",
+      photoCredit: "@Mailchimp",
+      photoURL: "http://www.google.com",
     }
   },
 

@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="px-8 mx-auto mt-20">
+    <div class="px-8 mx-auto mt-20 sm:mt-28">
       <div class="self-center mx-auto">
         <div class="mt-1">
           <input

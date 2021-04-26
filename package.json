@@ -9,6 +9,7 @@
   "dependencies": {
     "@tiptap/starter-kit": "*",
     "@tiptap/vue-3": "*",
+    "@vueform/slider": "^1.0.5",
     "vue": "^3.0.5",
     "vue-prosemirror": "^0.1.2"
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center m-8">
     <button class="p-4 font-bold uppercase bg-yellow-500 rounded-lg bg-opacity-80 animate-pulse">
-      Edit
+      Edit Letter
     </button>
   </div>
 </template>

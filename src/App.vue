@@ -9,7 +9,7 @@
     <div class="w-full h-screen" v-on:click="clickEdit">
       <Editor />
       <!-- <Slider v-model="value" /> -->
-      <Tiptap class="mt-6" />
+      <!-- <Tiptap class="mt-6" /> -->
       <PreviewPub v-if="previewShowing" />
     </div>
 
@@ -29,7 +29,7 @@
 import Navigation from "./components/Navigation.vue"
 import Editor from "./components/Editor.vue"
 import Controls from "./components/Controls.vue"
-import Tiptap from "./components/Tiptap.vue"
+// import Tiptap from "./components/Tiptap.vue"
 import PreviewPub from "./components/PreviewPub.vue"
 import Slider from "@vueform/slider"
 // asasd
@@ -40,7 +40,7 @@ export default {
     Navigation,
     Editor,
     Controls,
-    Tiptap,
+    // Tiptap,
     PreviewPub,
     Slider,
   },

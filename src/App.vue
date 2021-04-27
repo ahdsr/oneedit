@@ -7,7 +7,7 @@
     </div>
 
     <div class="w-full h-screen" v-on:click="clickEdit">
-      <Editor />
+      <EditorOld />
       <!-- <Slider v-model="value" /> -->
       <TiptapLucas class="mt-6" /> -->
       <PreviewPub v-if="previewShowing" />
@@ -27,7 +27,7 @@
 
 <script>
 import Navigation from "./components/Navigation.vue"
-import Editor from "./components/Editor.vue"
+import EditorOld from "./components/EditorOld.vue"
 import Controls from "./components/Controls.vue"
 import TiptapLucas from "./components/TiptapLucas.vue"
 import PreviewPub from "./components/PreviewPub.vue"
@@ -38,7 +38,7 @@ export default {
   name: "App",
   components: {
     Navigation,
-    Editor,
+    EditorOld,
     Controls,
     TiptapLucas,
     PreviewPub,

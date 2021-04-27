@@ -143,10 +143,10 @@
         redo
       </button>
     </div> -->
-    <!-- <editor-content
+    <editor-content
       class="p-4 text-gray-400 bg-gray-900 rounded-md bg-opacity-80"
       :editor="editor"
-    /> -->
+    />
 
     <div class="flex justify-center m-2 text-xs text-yellow-400">
       <a v-bind:href="photoURL">
@@ -158,7 +158,7 @@
 </template>
 
 <script>
-// import {Editor, EditorContent} from "@tiptap/vue-3"
+import {Editor} from "@tiptap/vue-3"
 // import {defaultExtensions} from "@tiptap/starter-kit"
 // asdsad
 export default {
@@ -168,39 +168,39 @@ export default {
 
   data() {
     return {
-      // editor: null,
+      editor: null,
       photoCredit: "@Mailchimp",
       photoURL: "http://www.google.com",
     }
   },
 
   mounted() {
-    // this.editor = new Editor({
-    //   extensions: [...defaultExtensions()],
-    //   content: `
-    //     <h2>
-    //       Hi there,
-    //     </h2>
-    //     <p>
-    //       this is a basic <em>basic</em> example of <strong>tiptap</strong>. Sure, there are all kind of basic text styles you’d probably expect from a text editor. But wait until you see the lists:
-    //     </p>
-    //     <ul>
-    //       <li>
-    //         That’s a bullet list with one …
-    //       </li>
-    //       <li>
-    //         … or two list items.
-    //       </li>
-    //     </ul>
-    //     <p>
-    //       Isn’t that great? And all of that is editable. But wait, there’s more. Let’s try a code block:
-    //     </p>
-    //   `,
-    // })
+    this.editor = new Editor({
+      // extensions: [...defaultExtensions()],
+      content: `
+        <h2>
+          Hi there,
+        </h2>
+        <p>
+          this is a basic <em>basic</em> example of <strong>tiptap</strong>. Sure, there are all kind of basic text styles you’d probably expect from a text editor. But wait until you see the lists:
+        </p>
+        <ul>
+          <li>
+            That’s a bullet list with one …
+          </li>
+          <li>
+            … or two list items.
+          </li>
+        </ul>
+        <p>
+          Isn’t that great? And all of that is editable. But wait, there’s more. Let’s try a code block:
+        </p>
+      `,
+    })
   },
 
   beforeDestroy() {
-    // this.editor.destroy()
+    this.editor.destroy()
   },
 }
 </script>

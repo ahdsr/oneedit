@@ -158,12 +158,12 @@
 </template>
 
 <script>
-import {Editor} from "@tiptap/vue-3"
-// import {defaultExtensions} from "@tiptap/starter-kit"
+import {Editor, EditorContent} from "@tiptap/vue-3"
+import {defaultExtensions} from "@tiptap/starter-kit"
 // asdsad
 export default {
   components: {
-    // EditorContent,
+    EditorContent,
   },
 
   data() {
@@ -176,7 +176,7 @@ export default {
 
   mounted() {
     this.editor = new Editor({
-      // extensions: [...defaultExtensions()],
+     / extensions: [...defaultExtensions()],
       content: `
         <h2>
           Hi there,
